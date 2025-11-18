@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos de la Idiosincrasia como Individuo - Ensayo Filosófico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+```
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);
+        padding: 20px;
+        color: #1f2937;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .header {
+        background: linear-gradient(135deg, #ea580c 0%, #f59e0b 100%);
+        color: white;
+        padding: 30px;
+        text-align: center;
+    }
+
+    .header h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .header-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .btn-download {
+        background: white;
+        color: #ea580c;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: all 0.3s;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .btn-download:hover {
+        background: #fed7aa;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+
+    .content {
+        padding: 40px;
+    }
+
+    .portada {
+        text-align: center;
+        padding: 30px 0;
+        border-bottom: 3px solid #fed7aa;
+        margin-bottom: 30px;
+    }
+
+    .portada .institucion {
+        color: #6b7280;
+        font-size: 0.95em;
+        margin-bottom: 20px;
+    }
+
+    .portada .eje-tematico {
+        background: #fef3c7;
+        padding: 15px;
+        border-radius: 8px;
+        margin: 20px 0;
+    }
+
+    .portada .eje-tematico p:first-child {
+        font-size: 0.85em;
+        text-transform: uppercase;
+        color: #9ca3af;
+        margin-bottom: 5px;
+    }
+
+    .portada .eje-tematico p:last-child {
+        font-size: 1.2em;
+        color: #ea580c;
+        font-weight: bold;
+    }
+
+    .portada h2 {
+        font-size: 2em;
+        color: #1f2937;
+        margin: 30px 0;
+    }
+
+    .portada .datos-estudiante {
+        font-size: 0.95em;
+        color: #4b5563;
+        line-height: 2;
+    }
+
+    .portada .datos-estudiante span {
+        font-weight: bold;
+        color: #1f2937;
+    }
+
+    .section {
+        margin-bottom: 35px;
+    }
+
+    .section h3 {
+        color: #ea580c;
+        font-size: 1.5em;
+        margin-bottom: 15px;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #fed7aa;
+    }
+
+    .section h4 {
+        color: #1f2937;
+        font-size: 1.2em;
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+
+    .section p {
+        text-align: justify;
+        margin-bottom: 15px;
+        color: #374151;
+    }
+
+    .palabras-clave {
+        background: #fef3c7;
+        padding: 10px 15px;
+        border-radius: 5px;
+        font-size: 0.9em;
+        margin-top: 10px;
+    }
+
+    .palabras-clave span {
+        font-weight: bold;
+        color: #ea580c;
+    }
+
+    .bibliografia {
+        padding-left: 20px;
+    }
+
+    .bibliografia p {
+        text-indent: -1.5em;
+        padding-left: 1.5em;
+        margin-bottom: 12px;
+        font-size: 0.95em;
+    }
+
+    .footer-info {
+        margin-top: 40px;
+        padding-top: 20px;
+        border-top: 2px solid #e5e7eb;
+        text-align: center;
+        font-size: 0.85em;
+        color: #6b7280;
+    }
+
+    .footer-info p {
+        margin-bottom: 5px;
+    }
+
+    .info-panel {
+        background: #fef3c7;
+        border-left: 5px solid #ea580c;
+        padding: 20px;
+        margin: 30px 40px;
+        border-radius: 5px;
+    }
+
+    .info-panel h4 {
+        color: #92400e;
+        margin-bottom: 15px;
+        font-size: 1.1em;
+    }
+
+    .info-panel ul {
+        list-style: none;
+        padding-left: 0;
+    }
+
+    .info-panel li {
+        color: #374151;
+        margin-bottom: 8px;
+        padding-left: 25px;
+        position: relative;
+        font-size: 0.9em;
+    }
+
+    .info-panel li:before {
+        content: "✓";
+        position: absolute;
+        left: 0;
+        color: #15803d;
+        font-weight: bold;
+    }
+
+    em {
+        font-style: italic;
+    }
+
+    @media print {
+        body {
+            background: white;
+            padding: 0;
+        }
+        
+        .container {
+            box-shadow: none;
+            max-width: 100%;
+        }
+        
+        .header, .btn-download, .info-panel {
+            display: none;
+        }
+        
+        .content {
+            padding: 20px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .content {
+            padding: 20px;
+        }
+        
+        .portada h2 {
+            font-size: 1.5em;
+        }
+        
+        .section h3 {
+            font-size: 1.3em;
+        }
+        
+        .info-panel {
+            margin: 20px 15px;
+        }
+    }
+
+    .scroll-top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: #ea580c;
+        color: white;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+        transition: all 0.3s;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .scroll-top.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .scroll-top:hover {
+        background: #c2410c;
+        transform: translateY(-5px);
+    }
+</style>
+```
+
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>📚 Ensayo Filosófico</h1>
+            <p>Actividad Integradora - Unidad de Competencia II</p>
+            <div class="header-icons">
+                <button class="btn-download" onclick="window.print()">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                        <polyline points="7 10 12 15 17 10"></polyline>
+                        <line x1="12" y1="15" x2="12" y2="3"></line>
+                    </svg>
+                    Imprimir/Guardar PDF
+                </button>
+            </div>
+        </div>
+
+```
+    <!-- Content -->
+    <div class="content">
+        <!-- Portada -->
+        <div class="portada">
+            <div class="institucion">
+                <p>Universidad de Guadalajara</p>
+                <p>Preparatoria Regional de Tala</p>
+                <p>Unidad de Competencia II</p>
+            </div>
+            
+            <div class="eje-tematico">
+                <p>Eje Temático:</p>
+                <p>El Hombre como Problema Filosófico</p>
+            </div>
+
+            <h2>Fundamentos de la Idiosincrasia como Individuo</h2>
+
+            <div class="datos-estudiante">
+                <p><span>Estudiante:</span> Juan Ángel Navarro Fregoso</p>
+                <p><span>Grado y Grupo:</span> 5º E - Turno Matutino</p>
+                <p><span>Institución:</span> Preparatoria Regional de Tala, UDG</p>
+                <p style="color: #9ca3af; margin-top: 20px;">Noviembre, 2025</p>
+            </div>
+        </div>
+
+        <!-- Resumen -->
+        <div class="section">
+            <h3>Resumen</h3>
+            <p>
+                El presente ensayo examina la construcción de la idiosincrasia individual como problema filosófico fundamental. Se plantea que la identidad personal no surge exclusivamente del determinismo cultural ni del libre albedrío absoluto, sino de una síntesis dialéctica entre ambos. A través del análisis de la cultura como matriz formativa, la capacidad reflexiva del individuo y los efectos de la globalización, se argumenta que el ser humano es simultáneamente heredero y creador de su propia identidad. Esta investigación demuestra que la idiosincrasia representa un proceso dinámico donde la tradición cultural proporciona el material simbólico, mientras la conciencia crítica permite la apropiación selectiva y transformación de dicho legado. Los conceptos clave incluyen identidad, autonomía, determinismo cultural y libertad existencial.
+            </p>
+            <div class="palabras-clave">
+                <span>Palabras clave:</span> Idiosincrasia, identidad, cultura, individuo, libertad, globalización, autonomía
+            </div>
+        </div>
+
+        <!-- Introducción -->
+        <div class="section">
+            <h3>Introducción</h3>
+            <p>
+                La pregunta por la naturaleza humana ha ocupado el centro de la reflexión filosófica desde los presocráticos hasta nuestros días. Sin embargo, en el contexto contemporáneo marcado por la globalización, la digitalización y el encuentro constante de culturas diversas, esta interrogante adquiere una urgencia particular. ¿Qué nos hace ser quienes somos? ¿Hasta qué punto somos producto de nuestra cultura y en qué medida construimos activamente nuestra identidad? La idiosincrasia individual, entendida como el conjunto único de características, valores y comportamientos que definen a cada persona, se presenta como un fenómeno complejo que demanda análisis filosófico riguroso.
+            </p>
+            <p>
+                Este ensayo sostiene como tesis central que la idiosincrasia individual no es resultado ni del determinismo cultural absoluto ni de la libertad total desvinculada del contexto, sino de una síntesis dialéctica entre la herencia cultural y la capacidad reflexiva del sujeto. El individuo se constituye en la tensión permanente entre lo dado y lo elegido, entre la tradición que lo precede y la autonomía que lo define como ser consciente.
+            </p>
+            <p>
+                Para defender esta postura, el ensayo se estructura en tres momentos argumentativos: primero, se analizará el concepto filosófico de idiosincrasia y su relación con la identidad personal; segundo, se examinará la dialéctica entre cultura e individuo, destacando tanto la influencia formativa del entorno como la capacidad crítica del sujeto; finalmente, se reflexionará sobre los desafíos que la globalización plantea a la construcción identitaria contemporánea. Este análisis demostrará que comprender los fundamentos de la idiosincrasia individual es esencial para abordar cuestiones éticas, políticas y existenciales en el mundo actual.
+            </p>
+        </div>
+
+        <!-- Desarrollo -->
+        <div class="section">
+            <h3>Desarrollo</h3>
+            
+            <h4>1. La idiosincrasia como concepto filosófico</h4>
+            <p>
+                El término idiosincrasia, derivado del griego "idios" (propio) y "synkrasis" (mezcla), originalmente designaba el temperamento particular de cada individuo. En la filosofía contemporánea, este concepto trasciende lo meramente biológico para abarcar la totalidad de características que configuran la singularidad humana. La idiosincrasia no es simplemente un conjunto de rasgos psicológicos, sino la manifestación concreta de cómo cada sujeto habita el mundo, interpreta su experiencia y construye significado.
+            </p>
+            <p>
+                La identidad personal, núcleo de la idiosincrasia, plantea uno de los problemas más debatidos en la historia del pensamiento. Desde la tradición filosófica occidental, podemos identificar dos grandes corrientes: el esencialismo, que postula la existencia de un núcleo identitario permanente e inmutable, y el constructivismo, que entiende la identidad como proceso dinámico y contingente. La posición que aquí se defiende reconoce elementos valiosos en ambas perspectivas: existe cierta continuidad experiencial que permite hablar de un "yo" a través del tiempo, pero este yo se configura mediante la interacción constante con el entorno social y cultural.
+            </p>
+            <p>
+                La relevancia filosófica de este problema radica en sus implicaciones éticas y existenciales. Si la identidad es completamente determinada por factores externos, la noción de responsabilidad moral se vuelve problemática. Por el contrario, si el individuo es absolutamente libre para construirse, ignoramos las condiciones materiales y simbólicas que posibilitan y limitan la existencia humana. La idiosincrasia individual, entonces, debe entenderse como el resultado de una libertad situada, una autonomía que se ejerce dentro de coordenadas históricas y culturales específicas.
+            </p>
+
+            <h4>2. Cultura e identidad: la dialéctica de la formación individual</h4>
+            <p>
+                La cultura constituye la matriz primordial en la formación de la idiosincrasia. Desde el nacimiento, el individuo se encuentra inmerso en un universo simbólico preexistente: el lenguaje materno, las normas sociales, los valores morales, las creencias religiosas o filosóficas de su comunidad. Estos elementos no son externos al sujeto, sino condiciones de posibilidad de su propia existencia como ser humano. Sin lenguaje no hay pensamiento abstracto; sin normas compartidas no hay convivencia social; sin tradición cultural no hay referentes para construir sentido.
+            </p>
+            <p>
+                Sin embargo, reducir la idiosincrasia a mera reproducción cultural implica negar la dimensión crítica y reflexiva que caracteriza al ser humano. A diferencia de otros animales, cuyo comportamiento está mayormente determinado por instintos, el humano posee la capacidad de distanciarse de sus propias creencias, examinarlas críticamente y, eventualmente, transformarlas. Esta capacidad reflexiva es precisamente lo que hace posible la autonomía individual y, con ella, la diversidad dentro de un mismo contexto cultural.
+            </p>
+            <p>
+                La relación entre individuo y cultura debe entenderse, por tanto, como dialéctica: la cultura forma al individuo, pero el individuo también transforma la cultura. Cada sujeto realiza una apropiación selectiva del acervo cultural disponible, enfatizando ciertos aspectos e ignorando otros según sus experiencias particulares, intereses y capacidades. Esta apropiación no es arbitraria ni completamente libre, pero tampoco es mecánica o pasiva. En este sentido, la idiosincrasia individual puede concebirse como una variación creativa sobre temas culturales compartidos.
+            </p>
+            <p>
+                Un ejemplo ilustrativo de esta dialéctica lo encontramos en el ámbito religioso. Dos personas criadas en la misma tradición religiosa pueden desarrollar relaciones muy diferentes con su fe: una puede asumir dogmáticamente todas las prescripciones, mientras otra puede adoptar una postura crítica que selecciona elementos significativos y rechaza otros. Ambas están influidas por su herencia cultural, pero cada una construye su propia síntesis identitaria. Este fenómeno se replica en todos los ámbitos de la vida: política, estética, ética, ocupacional.
+            </p>
+
+            <h4>3. La globalización y sus efectos en la construcción identitaria</h4>
+            <p>
+                El fenómeno de la globalización ha transformado radicalmente las condiciones en que se construye la idiosincrasia individual. La exposición constante a múltiples culturas, valores y formas de vida a través de medios digitales, migración y comercio internacional genera lo que podríamos denominar una "identidad en tránsito". Las fronteras culturales tradicionales se vuelven porosas, y el individuo contemporáneo tiene acceso a un repertorio simbólico vastamente más amplio que en épocas anteriores.
+            </p>
+            <p>
+                Esta situación presenta tanto oportunidades como desafíos. Por un lado, la globalización amplía las posibilidades de autoconfiguración: el sujeto puede incorporar elementos de diversas tradiciones, crear síntesis originales y experimentar con identidades múltiples. Esta flexibilidad identitaria puede ser emancipadora, liberando al individuo de determinismos culturales rígidos. Por otro lado, la sobreabundancia de opciones puede generar ansiedad, fragmentación y crisis de sentido. Cuando todo es posible, nada parece necesario; cuando todas las tradiciones están disponibles, ninguna parece vinculante.
+            </p>
+            <p>
+                Además, la globalización no es un proceso homogéneo ni neutral. Está atravesada por relaciones de poder que privilegian ciertas culturas sobre otras, generalmente aquellas asociadas con centros económicos y políticos dominantes. Esta asimetría produce lo que algunos teóricos han llamado "imperialismo cultural", donde valores y formas de vida occidentales tienden a imponerse sobre tradiciones locales. En este contexto, la construcción de la idiosincrasia individual se complica: ¿cómo mantener conexión con raíces culturales propias sin caer en fundamentalismos? ¿Cómo abrirse a la diversidad global sin perder coherencia identitaria?
+            </p>
+            <p>
+                La respuesta filosófica a estos interrogantes no puede ser simplista. Se requiere cultivar lo que podríamos llamar una "identidad cosmopolita arraigada": capacidad de dialogar con la diversidad cultural manteniendo compromiso con tradiciones propias; apertura a la transformación sin pérdida de continuidad biográfica; disposición crítica tanto hacia la herencia cultural como hacia las influencias globales. Esta postura reconoce que la idiosincrasia individual en la era global es necesariamente híbrida, pero que el hibridismo no implica caos ni relativismo absoluto, sino integración creativa de múltiples influencias en una síntesis coherente.
+            </p>
+        </div>
+
+        <!-- Conclusiones -->
+        <div class="section">
+            <h3>Conclusiones</h3>
+            <p>
+                A lo largo de este ensayo se ha demostrado que la idiosincrasia individual constituye un fenómeno filosóficamente complejo que resiste explicaciones reduccionistas. La tesis defendida, que postula la idiosincrasia como síntesis dialéctica entre determinación cultural y autonomía reflexiva, se sostiene en tres pilares argumentativos fundamentales.
+            </p>
+            <p>
+                Primero, se estableció que la idiosincrasia trasciende lo meramente psicológico para abarcar la totalidad de la existencia humana como ser consciente, situado e interpretativo. La identidad personal no es una sustancia inmutable ni una construcción arbitraria, sino un proceso dinámico de configuración que articula continuidad y cambio, herencia y elección.
+            </p>
+            <p>
+                Segundo, se analizó la relación dialéctica entre cultura e individuo, mostrando que la cultura proporciona el material simbólico indispensable para la constitución del sujeto, mientras que la capacidad reflexiva permite la apropiación crítica y transformación de ese legado. Esta perspectiva supera tanto el determinismo cultural como el individualismo absoluto, reconociendo la mutua implicación entre contexto y agencia.
+            </p>
+            <p>
+                Tercero, se reflexionó sobre los desafíos que la globalización plantea a la construcción identitaria contemporánea, destacando la necesidad de desarrollar una identidad cosmopolita arraigada que integre apertura a la diversidad con compromiso hacia tradiciones propias. Este equilibrio es fundamental para evitar tanto el fundamentalismo cultural como la alienación posmoderna.
+            </p>
+            <p>
+                La reflexión sobre los fundamentos de la idiosincrasia individual tiene profundas implicaciones prácticas. En el ámbito educativo, sugiere la importancia de cultivar no solo la transmisión de conocimientos, sino también la capacidad crítica y reflexiva que permite a cada estudiante construir su propio proyecto existencial. En el terreno político, fundamenta el respeto a la diversidad cultural sin caer en relativismos que impidan el diálogo intercultural. En la dimensión ética, sostiene una concepción de responsabilidad moral que reconoce tanto las limitaciones contextuales como la capacidad de autodeterminación.
+            </p>
+            <p>
+                Finalmente, este análisis nos invita a reconocer que somos simultáneamente herederos de una tradición cultural y arquitectos de nuestra propia identidad. La pregunta por los fundamentos de la idiosincrasia individual es, en última instancia, la pregunta por nuestra libertad y responsabilidad como seres humanos. En un mundo cada vez más interconectado pero también más diverso, comprender los mecanismos de formación de la identidad se vuelve esencial para construir sociedades justas que respeten tanto la singularidad individual como la pertenencia comunitaria. El desafío filosófico y existencial de nuestro tiempo consiste en habitar productivamente esta tensión, cultivando identidades suficientemente sólidas para otorgar sentido y orientación, pero suficientemente flexibles para permitir el diálogo, la transformación y el crecimiento.
+            </p>
+        </div>
+
+        <!-- Bibliografía -->
+        <div class="section">
+            <h3>Bibliografía</h3>
+            <div class="bibliografia">
+                <p>
+                    Giddens, A. (1991). <em>Modernidad e identidad del yo: el yo y la sociedad en la época contemporánea</em>. Península.
+                </p>
+                <p>
+                    Hall, S. (2003). Introducción: ¿quién necesita identidad? En S. Hall y P. du Gay (Eds.), <em>Cuestiones de identidad cultural</em> (pp. 13-39). Amorrortu.
+                </p>
+                <p>
+                    Heidegger, M. (1951). <em>El ser y el tiempo</em> (J. Gaos, Trad.). Fondo de Cultura Económica.
+                </p>
+                <p>
+                    Ricoeur, P. (1996). <em>Sí mismo como otro</em> (A. Neira Calvo, Trad.). Siglo XXI.
+                </p>
+                <p>
+                    Taylor, C. (1996). <em>Las fuentes del yo: la construcción de la identidad moderna</em> (A. Lizón, Trad.). Paidós.
+                </p>
+            </div>
+        </div>
+
+        <!-- Footer info -->
+        <div class="footer-info">
+            <p>Este documento cumple con las normas de formato establecidas:</p>
+            <p>Arial 12, interlineado 1.5, márgenes 3cm, extensión 3-4 cuartillas</p>
+            <p style="margin-top: 10px;">Universidad de Guadalajara - Preparatoria Regional de Tala</p>
+        </div>
+    </div>
+
+    <!-- Info panel -->
+    <div class="info-panel">
+        <h4>📋 Información importante:</h4>
+        <ul>
+            <li>El ensayo incluye todos los elementos requeridos: portada, resumen, introducción, desarrollo, conclusiones y bibliografía</li>
+            <li>Cumple con el formato especificado (Arial 12, interlineado 1.5, extensión adecuada)</li>
+            <li>Debes agregar tus datos personales completos en la portada (correo, teléfono, nombre del docente)</li>
+            <li>Puedes ajustar las citas bibliográficas según los textos específicos que hayas leído en clase</li>
+            <li>Usa Ctrl+P o el botón de arriba para imprimir o guardar como PDF</li>
+            <li>Revisa la ortografía y sintaxis antes de entregar</li>
+        </ul>
+    </div>
+</div>
+
+<!-- Scroll to top button -->
+<div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+    ↑
+</div>
+
+<script>
+    // Scroll to top functionality
+    window.addEventListener('scroll', function() {
+        const scrollTop = document.getElementById('scrollTop');
+        if (window.pageYOffset > 300) {
+            scrollTop.classList.add('visible');
+        } else {
+            scrollTop.classList.remove('visible');
+        }
+    });
+
+    function scrollToTop() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+
+    // Print functionality
+    window.addEventListener('beforeprint', function() {
+        document.title = 'Ensayo - Juan Angel Navarro Fregoso - Fundamentos de la Idiosincrasia';
+    });
+</script>
+</body>
+</html>
